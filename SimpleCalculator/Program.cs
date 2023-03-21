@@ -5,18 +5,14 @@
         public delegate double CalculateOperation(double firstNubmer, double secondNubmer);
         internal class Program
         {
-            public static double Add(double firtsNumber, double secondNumber) => firtsNumber + secondNumber;
-            public static double Substract(double firtsNumber, double secondNumber) => firtsNumber > secondNumber ? firtsNumber - secondNumber : secondNumber - firtsNumber;
-            public static double Multiply(double firtsNumber, double secondNumber) => firtsNumber * secondNumber;
-            public static double Divide(double firtsNumber, double secondNumber) => firtsNumber / secondNumber;
             static void Main(string[] args)
             {
                 Dictionary<string, CalculateOperation> Operations = new Dictionary<string, CalculateOperation>()
             {
-                {"+", Add},
-                {"-", Substract},
-                {"*", Multiply},
-                {"/", Divide},
+                {"+", (double firstNumber , double secondNumber) => firstNumber + secondNumber },
+                {"-", (double firtsNumber, double secondNumber) => firtsNumber > secondNumber ? firtsNumber - secondNumber : secondNumber - firtsNumber},
+                {"*", (double firtsNumber, double secondNumber) => firtsNumber * secondNumber},
+                {"/", (double firtsNumber, double secondNumber) => firtsNumber / secondNumber},
             };
                 Console.WriteLine("Enter the first number");
                 double firstNumber = double.Parse(Console.ReadLine());
