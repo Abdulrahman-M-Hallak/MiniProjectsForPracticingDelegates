@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{C2A0D42F-4771-439B-833D-3BE548947BC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{B9B2170D-1CE3-4F86-9381-ED2D96A4A855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C2A0D42F-4771-439B-833D-3BE548947BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2A0D42F-4771-439B-833D-3BE548947BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2A0D42F-4771-439B-833D-3BE548947BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B2170D-1CE3-4F86-9381-ED2D96A4A855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B2170D-1CE3-4F86-9381-ED2D96A4A855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B2170D-1CE3-4F86-9381-ED2D96A4A855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B2170D-1CE3-4F86-9381-ED2D96A4A855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
