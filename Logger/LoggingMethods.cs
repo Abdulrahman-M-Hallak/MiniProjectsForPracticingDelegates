@@ -1,4 +1,4 @@
-﻿namespace Delegates;
+﻿namespace Logger;
 
 public static class LoggingMethods
 {

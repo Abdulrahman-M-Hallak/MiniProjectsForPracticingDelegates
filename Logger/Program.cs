@@ -1,11 +1,13 @@
-﻿namespace Delegates;
+﻿using Logger;
+
+namespace Delegates;
 
 internal class Program
 {
     static void Main(string[] args)
     {
         LoggingMethods.ActivateLogToConsole();
-        LoggingMethods.ActivateLoggingToFile(@"C:\Users\Abdulrahman\Desktop\Sample.txt");
+        LoggingMethods.ActivateLoggingToFile(@"<filepath>");
 
         Logger.LogMessage(Logger.Severity.Critical, "asdf", "hello");
         

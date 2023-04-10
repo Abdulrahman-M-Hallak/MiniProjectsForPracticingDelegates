@@ -1,4 +1,4 @@
-﻿namespace Delegates;
+﻿namespace Logger;
 
 internal class FileLogger
 {
@@ -6,10 +6,10 @@ internal class FileLogger
 
     public FileLogger(string path)
     {
-        _filepath= path;
+        _filepath = path;
         Logger.WriteMessage += LogMessage;
 
-        if(!File.Exists(_filepath))
+        if (!File.Exists(_filepath))
             File.Create(path).Close();
     }
 
@@ -29,7 +29,7 @@ internal class FileLogger
             log.WriteLine(msg);
             log.Flush();
         }
-        catch(Exception)
+        catch (Exception)
         {
 
         }
